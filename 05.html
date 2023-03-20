@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function callAlert(){
+            alert("알림메시지가 출력되는 내장함수 alert()")
+        }
+    </script>
+</head>
+<body>
+    <form action="result.html" method="post">
+        학교명:<input type="text" size="15" name="schoolname" 
+        placeholder="학교명과 전공"><br>
+        성명:<input type="text" size="15" name="ID" 
+        value="성명"><br>
+        비밀번호:<input type="password" size="15" name="pwd" 
+        value=""><br>
+        <!--radio버튼은 하나의 그룹(name)중 하나만 선택-->
+        성별:<input type="radio" name="gender" checked value="male">남성
+        &nbsp;<!--줄바꿈없는공백--> 
+        <input type="radio" name="gender" value="female">여성<br>
+        파일: <input type="file" name="file1"><br>
+        취미: <input type="checkbox" name="read" checked value="read">독서 | 
+           <input type="checkbox" name="movie" value="movie">영화 |
+           <input type="checkbox" name="travel" value="travel">여행<br>
+        보이지않는 data: <input type="hidden" name="page" value="10">     
+        <br>
+        <input type="image" src="https://via.placeholder.com/100x100">
+        <br>
+        <button type="reset">취소버튼</button>
+        <button type="submit">전송버튼</button>
+        <button type="button" onclick="callAlert">일반버튼  </button>
+         <!--javascript 함수 호출할 때 많이 사용--><br><br>
+    </form>
+    
+</body>
+</html>
